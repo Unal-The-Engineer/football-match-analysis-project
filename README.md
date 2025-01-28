@@ -1,56 +1,58 @@
 # Football Match Analysis System 🎯⚽
 
-An advanced computer vision system for analyzing football matches, providing detailed insights into team tactics, ball possession, and spatial utilization.
+A sophisticated computer vision system for analyzing football matches, providing detailed insights into team tactics, ball possession, and spatial dynamics. This project uses advanced AI techniques to track and analyze various aspects of football matches.
 
-## 🌟 Features
+![Football Analysis Demo](images/demo.gif)
 
-### 1. Ball Possession Analysis
-- Real-time ball possession tracking
+## 🌟 Key Features
+
+### 1. Team Side Analysis 🏃‍♂️
+- Automatic detection of team defending sides
+- Team color and jersey identification
+- Player position tracking and mapping
+- Real-time spatial distribution analysis
+
+### 2. Ball Possession Analysis ⚽
+- Advanced ball tracking algorithms
 - Team-specific possession statistics
-- Visual representation of possession data
-- Customizable analysis parameters
+- Possession visualization with custom graphics
+- Frame-by-frame possession tracking
 
-### 2. Zone Analysis
+### 3. Attack Zone Analysis 📊
 - Pitch division into strategic zones
-- Heat maps of ball movement
-- Team-specific zone utilization metrics
-- Attack pattern recognition
+- Team-specific attack pattern recognition
+- Zone-based possession statistics
+- Visual heat maps of attacking movements
 
-### 3. Team Movement Analysis
-- Player position tracking
-- Team formation analysis
-- Attack zone preferences
-- Defensive organization patterns
+### 4. Penalty Area Encounter Analysis 🎯
+- Tracking of penalty area entries
+- Ball movement analysis in dangerous areas
+- Team-specific encounter statistics
+- Offensive efficiency metrics
 
-### 4. Visualization Tools
-- Interactive pitch diagrams
-- Statistical overlays
-- Team-specific color coding
-- Professional-grade visual outputs
-
-## 🛠 Technical Stack
+## 🛠️ Technology Stack
 
 - **Python 3.9+**
-- **OpenCV** for image processing
+- **OpenCV** for video processing and visualization
 - **NumPy** for numerical computations
-- **Supervision** for sports analytics
-- **PyTorch** for deep learning models
+- **Supervision** for sports analytics tools
+- **Jupyter Notebook** for interactive development
 
 ## 📋 Prerequisites
 
 ```bash
 - Python 3.9 or higher
-- OpenCV
+- OpenCV-Python
 - NumPy
 - Supervision
-- PyTorch
+- Jupyter Notebook
 ```
 
 ## 🚀 Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/football-analysis-project.git
+git clone https://github.com/Unal-The-Engineer/football-match-analysis-project.git
 ```
 
 2. Create and activate virtual environment:
@@ -66,59 +68,76 @@ pip install -r requirements.txt
 
 ## 💻 Usage
 
-1. Prepare your video file
-2. Update the video path in the configuration
-3. Run the analysis:
-```python
-python main.py --video_path "path/to/your/video.mp4"
+1. Open the Jupyter Notebook:
+```bash
+jupyter notebook football_ai.ipynb
 ```
 
-## 📊 Output Examples
+2. Update the video path in the configuration:
+```python
+video_path = "path/to/your/football/video.mp4"
+```
 
-### Possession Analysis
-![Possession Analysis](path_to_possession_image.png)
-- Team-wise ball possession statistics
-- Time-based possession tracking
+3. Run the analysis cells sequentially to get:
+- Team side detection
+- Ball possession statistics
+- Attack zone analysis
+- Penalty area encounters
+
+## 📊 Visualizations
+
+### Possession Statistics
+- Team-wise possession percentages
+- Interactive possession bars
+- Color-coded team statistics
 
 ### Zone Analysis
-![Zone Analysis](path_to_zone_analysis.png)
-- Heat maps of ball movement
-- Zone-specific statistics
+- Attack zone distribution
+- Team-specific heat maps
+- Horizontal zone divisions
 
-## 📝 Configuration
+## ⚙️ Configuration
 
-Customize analysis parameters in `config.py`:
+Key parameters in the notebook:
 ```python
 CONFIG = {
+    'stride': 30,
+    'debug': True,
     'possession_threshold': 3,
-    'analysis_stride': 30,
     'min_confidence': 0.3
 }
 ```
 
+## 📈 Sample Results
+
+- **Ball Possession:**
+  - Red Team: 60.5%
+  - Yellow Team: 39.5%
+
+- **Attack Zones:**
+  - Left Wing: 35.3%
+  - Center: 64.7%
+  - Right Wing: 0.0%
+
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+## 👥 Author
 
-- Your Name - *Initial work* - [YourGithub](https://github.com/yourusername)
+- **Unal Buyukkoroglu** - *Initial work* - [GitHub Profile](https://github.com/Unal-The-Engineer)
 
 ## 🙏 Acknowledgments
 
-- Thanks to [Supervision](https://github.com/roboflow/supervision) for their amazing computer vision tools
+- Thanks to the Roboflow for computer vision tools
 - Special thanks to the open-source community
 
-## 📞 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
 
-Project Link: [https://github.com/yourusername/football-analysis-project](https://github.com/yourusername/football-analysis-project)
+Unal Buyukkoroglu - [ubuyukkoroglu@outlook.com]
+
+Project Link: [https://github.com/Unal-The-Engineer/football-match-analysis-project]
